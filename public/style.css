@@ -1,0 +1,10 @@
+.top {
+    display: inline-block
+}
+#app, #purchase {
+    float: left
+}
+
+#purchase {
+    margin-left: 40px;
+}
