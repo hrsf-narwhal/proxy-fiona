@@ -20,7 +20,7 @@ app.all("/images/*", function(req, res) {
     apiProxy.web(req, res, {target: ServerOne});
 });
 
-app.all("/api2/*", function(req, res) {
+app.all("/api/*", function(req, res) {
     console.log('redirecting to Server2');
     apiProxy.web(req, res, {target: ServerTwo});
 });
