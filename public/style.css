@@ -1,10 +1,90 @@
-.top {
-    display: inline-block
-}
-#app, #purchase {
-    float: left
+/* top navigation bar */
+#top-nav {
+    display: inline-block;
+    padding: 4px 8px;
+    margin-bottom: 20px;
 }
 
-#purchase {
-    margin-left: 40px;
+#title {
+    font-size: 40px;
+    color:  #f45800;
+    float: left;
+    vertical-align: middle
+}
+
+.input {
+    width: 250px;
+    height: 20px;
+    border: 1px solid #CFCBC8;
+    padding: 6px 10px;
+    position: relative;
+    margin-left: 20px;
+}
+
+#search {
+    width: 80px;
+    height: 34px;
+    border: 1px solid #f45800;
+    border-top-right-radius: 3px;
+    border-bottom-right-radius: 3px;
+    background-color: #f45800;
+    color: white;
+    font-size: 14px;
+    font-weight: 600;
+    margin-right: 400px;
+}
+
+.link {
+    color: #f45800;
+    margin-right: 20px;
+    font-size: 16px;
+}
+
+#signin {
+    border: 1px solid #f45800;
+    padding: 8px;
+    border-radius: 3px;
+    color: #f45800;
+    font-size: 16px;
+    margin-right: 20px;
+}
+
+svg {
+    vertical-align: middle
+}
+
+/* main content */
+.content {
+    display: inline-block;
+    width: 1200px
+}
+
+.listing-left-col {
+    float: left;
+    width: 570px;
+    margin-right: 40px;
+    margin-left: 80px;
+    display: block
+}
+
+.message {
+    height: 55px;
+    padding: 8px 18px;
+    font-size: 16px;
+    line-height: 16px;
+    background-color: #f2efef;
+}
+
+h3 {
+    margin: 8px 0;
+}
+
+.listing-right-col {
+    float:left;
+    width:392px;
+    display: block
+}
+
+.divider {
+    height: 100px;
 }
