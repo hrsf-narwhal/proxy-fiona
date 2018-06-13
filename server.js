@@ -8,6 +8,7 @@ const apiProxy = httpProxy.createProxyServer();
 const port = process.env.PORT || 3000;
 
 app.use(morgan('dev'));
+app.use(express.static(path.join(__dirname, 'public')));
 app.use('/listing/:id', express.static(path.join(__dirname, 'public')));
 
 
@@ -16,17 +17,17 @@ const ServerOne = 'http://localhost:3001',
       ServerThree = 'http://localhost:3003';
  
 app.all("/images/*", function(req, res) {
-    console.log('redirecting to Server1');
+    // console.log('redirecting to Server1');
     apiProxy.web(req, res, {target: ServerOne});
 });
 
 app.all("/api/*", function(req, res) {
-    console.log('redirecting to Server2');
+    // console.log('redirecting to Server2');
     apiProxy.web(req, res, {target: ServerTwo});
 });
 
 app.all("/purchase/*", function(req, res) {
-    console.log('redirecting to Server3');
+    // console.log('redirecting to Server3');
     apiProxy.web(req, res, {target: ServerThree});
 });
 
