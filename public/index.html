@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./style.css">
+    <title>Itsy Product Page</title>
+</head>
+<body>
+    <header>
+         <div id='header'></div>
+    </header>
+    <div class="content">
+        
+        <div class="listing-left-col">
+            <div class="message">
+                <h3>Like this item?</h3>
+                Add it to your favorites to revisit it later.
+            </div>
+            <div id="app"></div>
+            <div class="divider"></div>
+            <div id="reviews"></div>
+        </div>
+        <div class="listing-right-col">
+            <div id="purchase"></div>
+        </div>
+       
+    </div>
+    <script src="/listing/:pid/lib/react.development.js"></script>
+    <script src="/listing/:pid/lib/react-dom.development.js"></script>
+    <script src="http://localhost:3001/listing/:pid/main.js"></script>
+    <script src="http://localhost:3002/listing/:pid/bundle.js"></script>
+    <script src="http://localhost:3003/listing/:pid/app.js"></script>
+    <script src="./components/Header.js"></script>
+    <script>
+        ReactDOM.render(
+          React.createElement(Header),
+          document.getElementById('header')
+        );
+    </script>
+</body>
+</html>
